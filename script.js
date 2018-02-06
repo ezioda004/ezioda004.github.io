@@ -29,8 +29,15 @@ $(document).ready(function() {
           }
           
           var typed = new Typed("h1", options);
-    }, 4500);
+    }, 100);
  
 
+    $("button").on("click", function(e){
+        e.preventDefault();
+        $("button svg").toggleClass("fa-angle-double-down");
+        $("button svg").toggleClass("fa-times");
+
+
+    })
     
 });
