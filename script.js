@@ -14,7 +14,7 @@ $(document).ready(function() {
             showCursor: false,
             cursorChar: '|',
             // fadeOutClass: 'typed-fade-out'
-            onComplete: (self) => {var typed2 = new Typed("h2", second);},
+            onComplete: (self) => {var typed2 = new Typed("h2", second);}
           }
 
           var second = {
@@ -26,6 +26,7 @@ $(document).ready(function() {
             smartBackspace: true,
             showCursor: true,
             cursorChar: '|',
+            onComplete: (self) => {$(".navbar").fadeIn(1000).css("display", "flex")}
           }
           
           var typed = new Typed("h1", options);

@@ -1,6 +1,8 @@
 body, html {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  color: whitesmoke;
+  background: #222; }
   body #loader-wrapper, html #loader-wrapper {
     position: fixed;
     top: 0;
@@ -96,10 +98,13 @@ header {
   color: white;
   font-family: 'Ubuntu Mono', monospace;
   background: url("img/prog2_blur.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 150vh; }
+  header nav.navbar {
+    display: none; }
   header .intro {
     position: relative;
     color: white;
@@ -122,6 +127,10 @@ header {
         align-self: center;
         text-align: center; }
 
+img {
+  height: 200px;
+  width: 200px; }
+
 .typed-cursor {
   font-size: 25px;
   animation: blinker 1s linear infinite; }
@@ -129,7 +138,29 @@ header {
 @keyframes blinker {
   50% {
     opacity: 0; } }
-/* ANIMATED X */
+body main #skill .row {
+  margin: 5%; }
+  body main #skill .row .col-lg-6 .skill-current {
+    display: flex; }
+    body main #skill .row .col-lg-6 .skill-current svg {
+      width: 100px;
+      height: 100px; }
+    body main #skill .row .col-lg-6 .skill-current .skill-bar {
+      height: 20px;
+      width: 300px;
+      border: 2px white solid;
+      position: relative;
+      top: 40px; }
+
+svg {
+  width: 100px;
+  height: 100px; }
+
+.skill-bar {
+  height: 20px;
+  width: 300px;
+  border: 2px white solid; }
+
 @media screen and (max-width: 768px) {
   .navbar .navbar-collapse {
     background: black;
