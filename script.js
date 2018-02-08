@@ -39,6 +39,10 @@ $(document).ready(function() {
         $("button svg").toggleClass("fa-times");
 
 
-    })
+    });
+    // if($(".skill-name").text() === "CSS"){
+    //     $(this > .skill-)
+    // }
+    
     
 });

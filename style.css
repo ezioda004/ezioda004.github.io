@@ -2,7 +2,8 @@ body, html {
   height: 100%;
   margin: 0;
   color: whitesmoke;
-  background: #222; }
+  background: #222;
+  font-family: 'Ubuntu Mono', monospace; }
   body #loader-wrapper, html #loader-wrapper {
     position: fixed;
     top: 0;
@@ -145,21 +146,45 @@ body main #skill .row {
     body main #skill .row .col-lg-6 .skill-current svg {
       width: 100px;
       height: 100px; }
-    body main #skill .row .col-lg-6 .skill-current .skill-bar {
-      height: 20px;
-      width: 300px;
-      border: 2px white solid;
-      position: relative;
-      top: 40px; }
+    body main #skill .row .col-lg-6 .skill-current .skill-display {
+      margin-left: 5%;
+      display: flex;
+      flex-flow: column wrap; }
+      body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar {
+        height: 20px;
+        width: 300px;
+        position: relative;
+        top: 40px;
+        border-radius: 5%;
+        font-size: 0.8em; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #HTML {
+          background: #f16529; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #CSS {
+          background: #33a9dc; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #JS {
+          background: #f0db4f; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #jQuery {
+          background: #0868ac; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #BS {
+          background: #5b4282; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #SASS {
+          background: #cb6699; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #Git {
+          background: #f34f29; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #Python1 {
+          background: #35709F; }
+        body main #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #Python2 {
+          background: #FFD949; }
+body main #skill .row:nth-of-type(even) {
+  position: relative;
+  left: 10%; }
+body main #skill .row:nth-of-type(odd) {
+  position: relative;
+  left: -5%; }
 
 svg {
   width: 100px;
   height: 100px; }
-
-.skill-bar {
-  height: 20px;
-  width: 300px;
-  border: 2px white solid; }
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-collapse {
@@ -170,7 +195,10 @@ svg {
     top: 50px;
     left: -1px; }
     .navbar .navbar-collapse ul li {
-      padding-left: 5%; } }
+      padding-left: 5%; }
+
+  body main #skill .container .row .col-lg-6 .skill-current .skill-display .skill-bar {
+    width: 200px; } }
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -206,6 +234,15 @@ svg {
     position: relative;
     top: 35%; }
     header .intro .type h1 {
-      font-size: 3em; } }
+      font-size: 3em; }
+
+  body main #skill .container .row .col-lg-6 .skill-current .skill-display .skill-bar {
+    width: 120px; } }
+@media screen and (max-width: 990px) {
+  body main #skill .container .row {
+    position: relative;
+    left: 0%; }
+    body main #skill .container .row .col-lg-6 {
+      margin: 3%; } }
 
 /*# sourceMappingURL=style.css.map */
