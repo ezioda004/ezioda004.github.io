@@ -128,10 +128,6 @@ header {
         align-self: center;
         text-align: center; }
 
-img {
-  height: 200px;
-  width: 200px; }
-
 .typed-cursor {
   font-size: 25px;
   animation: blinker 1s linear infinite; }
@@ -139,6 +135,27 @@ img {
 @keyframes blinker {
   50% {
     opacity: 0; } }
+body h1 {
+  font-size: 4em; }
+body .About {
+  background-color: #9b0c02;
+  margin: 5% 0; }
+  body .About .container hr {
+    border-top: 3px solid #222;
+    width: 15%;
+    color: white;
+    margin-bottom: 30px; }
+  body .About .container p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.4em; }
+body main #skill hr {
+  border-top: 1px solid red;
+  width: 15%;
+  color: white;
+  margin-bottom: 30px; }
+body main #skill p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.4em; }
 body main #skill .row {
   margin: 5%; }
   body main #skill .row .col-lg-6 .skill-current {
@@ -181,6 +198,17 @@ body main #skill .row:nth-of-type(even) {
 body main #skill .row:nth-of-type(odd) {
   position: relative;
   left: -5%; }
+body .Projects {
+  background: #9b0c02; }
+  body .Projects hr {
+    border-top: 3px solid #222;
+    width: 15%;
+    color: white;
+    margin-bottom: 30px; }
+  body .Projects main .row {
+    margin: 3%; }
+    body .Projects main .row .col-lg-6 {
+      text-align: center; }
 
 svg {
   width: 100px;
