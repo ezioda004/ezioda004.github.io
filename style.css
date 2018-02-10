@@ -113,6 +113,9 @@ header {
     width: 100%;
     font-family: 'Ubuntu Mono', monospace;
     /* Center and scale the image nicely */ }
+    header .intro .down {
+      position: relative;
+      top: 80%; }
     header .intro .type {
       position: relative;
       top: 40%;
@@ -139,7 +142,8 @@ body h1 {
   font-size: 4em; }
 body .About {
   background-color: #9b0c02;
-  margin: 5% 0; }
+  padding-top: 5%;
+  margin-bottom: 5%; }
   body .About .container hr {
     border-top: 3px solid #222;
     width: 15%;
@@ -198,7 +202,11 @@ body main #skill .row:nth-of-type(even) {
 body main #skill .row:nth-of-type(odd) {
   position: relative;
   left: -5%; }
+body main #skill .skill-learning .row {
+  position: relative;
+  left: 0; }
 body .Projects {
+  padding-top: 5%;
   background: #9b0c02; }
   body .Projects hr {
     border-top: 3px solid #222;
@@ -209,6 +217,21 @@ body .Projects {
     margin: 3%; }
     body .Projects main .row .col-lg-6 {
       text-align: center; }
+      body .Projects main .row .col-lg-6 figure img:hover {
+        opacity: 0.3; }
+      body .Projects main .row .col-lg-6 figure img:hover figcaption {
+        opacity: 1; }
+      body .Projects main .row .col-lg-6 figure figcaption {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 100;
+        box-sizing: border-box; }
 
 svg {
   width: 100px;
