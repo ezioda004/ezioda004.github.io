@@ -40,6 +40,18 @@ $(document).ready(function() {
 
 
     });
+    // $("#img-hover").hover(function(){
+    //     $(this).next().toggleClass("transform");    
+    // }, function(){
+    //     $(this).next().toggleClass("transform");
+    // });
+$("img").on("mouseenter", function(){
+    $(this).next().addClass("transform");
+});
+$("figcaption").on("mouseleave", function(){
+    $(this).removeClass("transform");
+});
+
     // if($(".skill-name").text() === "CSS"){
     //     $(this > .skill-)
     // }
