@@ -244,7 +244,7 @@ body .Projects {
           flex-flow: row wrap;
           align-items: center; }
           body .Projects main .row .col-lg-6 figure figcaption h3 {
-            font-size: 2em;
+            font-size: 2rem;
             flex: 1 1 100%; }
           body .Projects main .row .col-lg-6 figure figcaption p {
             background: #222;
@@ -252,7 +252,15 @@ body .Projects {
           body .Projects main .row .col-lg-6 figure figcaption p:nth-of-type(2) {
             flex: 1 1 100%; }
           body .Projects main .row .col-lg-6 figure figcaption a {
-            flex: 1 1 100%; }
+            display: inline-block;
+            width: 50%;
+            flex: 0 1 50%; }
+body .Contact .container form input {
+  margin: 2% 0; }
+body .Contact .container form button {
+  margin: 2% auto;
+  position: relative;
+  left: 45%; }
 
 svg {
   width: 100px;
