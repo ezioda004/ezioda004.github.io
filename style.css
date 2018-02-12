@@ -225,20 +225,34 @@ body .Projects {
           opacity: 0.3; }
         body .Projects main .row .col-lg-6 figure figcaption {
           display: none;
+          border: 1px solid transparent;
+          border-radius: 0.25rem;
+          padding: 0.25rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
           margin: 0 auto;
-          width: 75%;
+          width: 70%;
           height: 90%;
           box-sizing: border-box;
-          opacity: 0;
-          transition-delay: .3s;
-          transition: .5s ease; }
+          overflow: hidden;
+          opacity: 1;
+          z-index: 1000;
+          justify-content: center;
+          flex-flow: row wrap;
+          align-items: center; }
           body .Projects main .row .col-lg-6 figure figcaption h3 {
-            font-size: 2em; }
+            font-size: 2em;
+            flex: 1 1 100%; }
           body .Projects main .row .col-lg-6 figure figcaption p {
-            margin-top: 20px;
-            background: #222; }
+            background: #222;
+            flex: 1 1 100%; }
           body .Projects main .row .col-lg-6 figure figcaption p:nth-of-type(2) {
-            margin-top: 100px; }
+            flex: 1 1 100%; }
+          body .Projects main .row .col-lg-6 figure figcaption a {
+            flex: 1 1 100%; }
 
 svg {
   width: 100px;
@@ -246,7 +260,6 @@ svg {
 
 .transform {
   opacity: 1 !important;
-  display: block !important;
   transform: translateY(-320px); }
 
 @media screen and (max-width: 768px) {

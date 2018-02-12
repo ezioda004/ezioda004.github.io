@@ -40,21 +40,33 @@ $(document).ready(function() {
 
 
     });
-    // $("#img-hover").hover(function(){
-    //     $(this).next().toggleClass("transform");    
-    // }, function(){
-    //     $(this).next().toggleClass("transform");
-    // });
-$("img").on("mouseenter", function(){
-    $(this).next().addClass("transform");
+
+//this one
+     $("img").on("mouseover", function(){
+        $(this).css("opacity", "0.3");
+        $(this).next().width($(this).width());
+        $(this).next().height($(this).height());
+        $(this).next().fadeIn(500, function(){
+            $(this).next().css("display", "flex");
+    }).css("display", "flex");
 });
 $("figcaption").on("mouseleave", function(){
-    $(this).removeClass("transform");
+    
+    $(this).fadeOut(500, function(){
+        $(this).prev().css("opacity", "1");
+        $(this).css("display", "none");
+    })
 });
+// $("figcaption").on("mouseleave", function(){
+//     $(this).removeClass("transform").delay(500).css("display", "none");
+// });
 
-    // if($(".skill-name").text() === "CSS"){
-    //     $(this > .skill-)
-    // }
     
-    
+$(window).resize(function(){
+    console.log($("img").width());
+    $("figcaption").width($("img").width());
+    $("figcaption").height($("img").height());
+})
+$("figcaption").width($("img").width());
+$("figcaption").height($("img").height());
 });
