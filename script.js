@@ -60,7 +60,7 @@ $(document).ready(function() {
           }
           
           var typed = new Typed("h1", options);
-    }, 100);
+    }, 5000);
  
 
     $("button").on("click", function(e){
