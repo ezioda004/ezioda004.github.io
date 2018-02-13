@@ -17,9 +17,9 @@
     <script src="script.js"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body data-spy="scroll">
     <header>
-        <nav class = "navbar navbar-expand-sm navbar-dark justify-content-sm-around sticky-top">
+        <nav class = "navbar navbar-expand-sm navbar-dark justify-content-sm-around fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fas fa-angle-double-down"></i>
@@ -27,22 +27,22 @@
             <div class="collapse navbar-collapse justify-content-sm-around" id="nav-content">  
                 <ul class = "navbar-nav">
                     <li class = "nav-item dropdown">
-                        <a class = "nav-link" href="#">About</a>
+                        <a class = "nav-link" href="#About">About</a>
                     </li>
                 </ul>
                 <ul class = "navbar-nav">
                     <li class = "nav-item dropdown">
-                        <a class = "nav-link" href="#">Skills</a>
+                        <a class = "nav-link" href="#skill">Skills</a>
                     </li>
                 </ul>
                 <ul class = "navbar-nav">
                     <li class = "nav-item dropdown">
-                        <a class = "nav-link" href="#">Projects</a>
+                        <a class = "nav-link" href="#Projects">Projects</a>
                     </li>
                 </ul>
                 <ul class = "navbar-nav">
                     <li class = "nav-item dropdown">
-                        <a class = "nav-link" href="#">Contact</a>
+                        <a class = "nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div> 
@@ -58,7 +58,7 @@
        
         </div>
     </header>
-    <main class = "About">
+    <main id = "About">
         <div class = "container">
             <h1 class = "text-center">About me</h1>
             <hr>
@@ -227,7 +227,7 @@
     </main>
 
     
-    <section class = "Projects">
+    <section id = "Projects">
         <h1 class = "text-center">Projects</h2>
         <hr>
         <main class = "container-fluid">
@@ -365,8 +365,19 @@
 
         </main>
     </section>
-
-    <section class = "Contact">
+    <div class = "hire">
+        <div class="container-fluid">
+            <div class = "hire-text text-center">
+                <h1 class = "text-center">Interested in working with me?</h1>
+                <h3 class = "text-center">I'm available for full-time, part-time and freelance work.</h3>
+                <button class="text-center btn btn-lg btn-danger"><a href="#contact"></a>Contact Me</button>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <section id = "contact">
         <div class = "container">
             <h1 class = "text-center">Drop me a line</h1>
             <hr>
@@ -375,7 +386,7 @@
                 <input  class="form-control" type="text" placeholder="Your Name">
                 <input  class="form-control" type="email" placeholder = "Email">
                 <textarea  class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <button class = "btn btn-lg btn-outline-danger">Send Message</button>
+                <button class = "btn btn-lg btn-outline-light">Send Message</button>
             </form>
         </div>
         
@@ -387,7 +398,18 @@
         <div class = "loader-section section-right"></div>
     </div>
     <footer>
+        <div class =  "social-links text-center">
+            <a class = "btn btn-lg" href="https://www.linkedin.com/in/aditya-verma-16ba91137/" target = "_blank"><i class="fab fa-lg fa-linkedin-in"></i></a>
+            <a class = "btn btn-lg" href="https://codepen.io/ezioda004/" target = "_blank"><i class="fab fa-lg fa-codepen"></i></a>
+            <a class = "btn btn-lg" href="https://github.com/ezioda004" target = "_blank"><i class="fab fa-lg fa-github"></i></a>
+            <a class = "btn btn-lg" href="https://www.freecodecamp.org/ezioda004" target = "_blank"><i class="fab fa-lg fa-free-code-camp"></i></a>
 
+        </div>
+        <div class = "final-words text-center">
+            <p> Made with <span id = "madeWith" class = "animated pulse infinite">🍕</span></p>  
+            <p>Something something rights reserved. </p> 
+        </div>
+        
     </footer>
     
 

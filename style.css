@@ -1,4 +1,5 @@
 body, html {
+  position: relative;
   height: 100%;
   margin: 0;
   color: whitesmoke;
@@ -104,8 +105,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 150vh; }
-  header nav.navbar {
-    display: none; }
   header .intro {
     position: relative;
     color: white;
@@ -140,16 +139,16 @@ header {
     opacity: 0; } }
 body h1 {
   font-size: 4em; }
-body .About {
+body #About {
   background-color: #9b0c02;
   padding-top: 5%;
   margin-bottom: 5%; }
-  body .About .container hr {
+  body #About .container hr {
     border-top: 3px solid #222;
     width: 15%;
     color: white;
     margin-bottom: 30px; }
-  body .About .container p {
+  body #About .container p {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.4em; }
 body main #skill hr {
@@ -205,25 +204,25 @@ body main #skill .row:nth-of-type(odd) {
 body main #skill .skill-learning .row {
   position: relative;
   left: 0; }
-body .Projects {
-  padding-top: 5%;
+body #Projects {
+  padding: 5% 0;
   background: #9b0c02; }
-  body .Projects hr {
+  body #Projects hr {
     border-top: 3px solid #222;
     width: 15%;
     color: white;
     margin-bottom: 30px; }
-  body .Projects main .row {
+  body #Projects main .row {
     margin: 3%; }
-    body .Projects main .row .col-lg-6 {
+    body #Projects main .row .col-lg-6 {
       text-align: center; }
-      body .Projects main .row .col-lg-6 figure {
+      body #Projects main .row .col-lg-6 figure {
         overflow: hidden; }
-        body .Projects main .row .col-lg-6 figure img {
+        body #Projects main .row .col-lg-6 figure img {
           background: #222; }
-        body .Projects main .row .col-lg-6 figure img:hover {
+        body #Projects main .row .col-lg-6 figure img:hover {
           opacity: 0.3; }
-        body .Projects main .row .col-lg-6 figure figcaption {
+        body #Projects main .row .col-lg-6 figure figcaption {
           display: none;
           border: 1px solid transparent;
           border-radius: 0.25rem;
@@ -243,24 +242,52 @@ body .Projects {
           justify-content: center;
           flex-flow: row wrap;
           align-items: center; }
-          body .Projects main .row .col-lg-6 figure figcaption h3 {
+          body #Projects main .row .col-lg-6 figure figcaption h3 {
             font-size: 2rem;
             flex: 1 1 100%; }
-          body .Projects main .row .col-lg-6 figure figcaption p {
+          body #Projects main .row .col-lg-6 figure figcaption p {
             background: #222;
             flex: 1 1 100%; }
-          body .Projects main .row .col-lg-6 figure figcaption p:nth-of-type(2) {
+          body #Projects main .row .col-lg-6 figure figcaption p:nth-of-type(2) {
             flex: 1 1 100%; }
-          body .Projects main .row .col-lg-6 figure figcaption a {
+          body #Projects main .row .col-lg-6 figure figcaption a {
             display: inline-block;
             width: 50%;
             flex: 0 1 50%; }
-body .Contact .container form input {
-  margin: 2% 0; }
-body .Contact .container form button {
-  margin: 2% auto;
-  position: relative;
-  left: 45%; }
+body .hire .container-fluid {
+  background: url("img/hire2.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  body .hire .container-fluid .hire-text {
+    position: relative;
+    top: 25%; }
+    body .hire .container-fluid .hire-text h1 {
+      font-size: 3rem; }
+    body .hire .container-fluid .hire-text button {
+      margin-top: 3%; }
+body #contact {
+  background: #9b0c02;
+  color: whitesmoke; }
+  body #contact .container hr {
+    border-top: 3px solid #222;
+    width: 25%;
+    color: white;
+    margin-bottom: 30px; }
+  body #contact .container form input {
+    margin: 2% 0; }
+  body #contact .container form button {
+    margin: 2% auto;
+    position: relative;
+    left: 45%; }
+body footer .social-links {
+  margin: 3% 0; }
+  body footer .social-links a {
+    color: white; }
+  body footer .social-links a:hover {
+    color: #9b0c02; }
 
 svg {
   width: 100px;
