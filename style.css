@@ -107,7 +107,8 @@ header {
   height: 150vh; }
   header nav.navbar {
     background: #222;
-    opacity: 0.7; }
+    opacity: 0.7;
+    display: none; }
   header div ul.navbar-nav li a {
     padding-left: 23px; }
   header .active {
