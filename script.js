@@ -56,7 +56,7 @@ $(document).ready(function() {
             smartBackspace: true,
             showCursor: true,
             cursorChar: '|',
-            // onComplete: (self) => {$(".navbar").fadeIn(1000).css("display", "flex")}
+            onComplete: (self) => {$(".navbar").fadeIn(1000).css("display", "flex")}
           }
           
           var typed = new Typed("h1", options);
@@ -72,7 +72,7 @@ $(document).ready(function() {
     });
 
 //this one
-     $("img").on("mouseover", function(){
+     $(".img-hover").on("mouseover", function(){
         $(this).css("opacity", "0.3");
         $(this).next().width($(this).width());
         $(this).next().height($(this).height());
@@ -93,9 +93,15 @@ $("figcaption").on("mouseleave", function(){
 
     
 $(window).resize(function(){
-    console.log($("img").width());
     $("figcaption").width($("img").width());
     $("figcaption").height($("img").height());
+    if ($(window).width() < 634){
+        $("#GC").height("auto");
+    }
+    else {
+        $("#GC").height($("#FC").height());
+    }
+    
 })
 $("figcaption").width($("img").width());
 $("figcaption").height($("img").height());
