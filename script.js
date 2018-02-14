@@ -22,12 +22,6 @@ $(document).ready(function() {
         } // End if
       });
 
-    //   window.onscroll = function(){
-    //     if(this.scrollY > 1381){
-    //         $("nav.navbar").css("background", "red");
-    //     }
-    //   };
-
 
 
     setTimeout(function(){
@@ -71,6 +65,18 @@ $(document).ready(function() {
 
     });
 
+    $("button[type = 'submit']").on("click", function(e){
+        e.preventDefault();
+        $("#after-submit").fadeIn(1000, function(){
+            // $(this).css("display", "block");
+            setTimeout(function(){
+                $("#after-submit").fadeOut(1000);
+                $("form input").val("");
+                $("form textarea").val("");
+            }, 5000);
+        });
+
+    });
 //this one
      $(".img-hover").on("mouseover", function(){
         $(this).css("opacity", "0.3");
@@ -87,9 +93,6 @@ $("figcaption").on("mouseleave", function(){
         $(this).css("display", "none");
     })
 });
-// $("figcaption").on("mouseleave", function(){
-//     $(this).removeClass("transform").delay(500).css("display", "none");
-// });
 
     
 $(window).resize(function(){
@@ -113,7 +116,7 @@ setInterval(function(){
     $("#madeWith").hide().html(emoji[i]).fadeIn(500);
     
     
-    if (i ===2 ){
+    if (i ===3 ){
         i = -1;
         
     }

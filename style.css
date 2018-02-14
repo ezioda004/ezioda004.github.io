@@ -110,7 +110,7 @@ header {
     opacity: 0.7;
     display: none; }
   header div ul.navbar-nav li a {
-    padding-left: 23px; }
+    border-bottom: 3px solid #9b0c02; }
   header .active {
     background: whitesmoke;
     color: #222 !important;
@@ -312,6 +312,12 @@ body #contact {
   body #contact .container form {
     margin: 0 auto;
     width: 60%; }
+    body #contact .container form #after-submit {
+      display: none; }
+      body #contact .container form #after-submit p {
+        background: #28a745;
+        color: white;
+        border-radius: .25rem; }
     body #contact .container form input {
       margin: 2% 0; }
     body #contact .container form button {
