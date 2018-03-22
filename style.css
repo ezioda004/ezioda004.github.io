@@ -431,7 +431,7 @@ body .hire .container-fluid .hire-text a {
 }
 
 body #contact {
-  padding: 3% 0;
+  padding: 5% 0;
   background: #9b0c02;
   color: whitesmoke;
 }
@@ -492,14 +492,36 @@ svg {
   height: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar .navbar-collapse {
+    background: #222;
+    opacity: 0.9;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    top: 1px;
+    left: -1px;
+  }
+  body main #skill .container .row {
+    position: relative;
+    left: 0%;
+  }
+  body main #skill .container .row .col-lg-6 {
+    margin: 3%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hire-text a {
     font-size: 0.75em;
   }
+  h1 {
+    font-size: 3em !important;
+  }
   h3 {
     font-size: 1rem !important;
   }
-  h1, h2 {
+  h2 {
     font-size: 2.2em !important;
   }
   figcaption p {
@@ -507,14 +529,6 @@ svg {
   }
   figcaption a {
     width: auto !important;
-  }
-  .navbar .navbar-collapse {
-    background: black;
-    z-index: 1000;
-    position: absolute;
-    width: 100%;
-    top: 1px;
-    left: -1px;
   }
   .nav-link {
     padding-left: 23px !important;
@@ -524,13 +538,14 @@ svg {
   }
 }
 
-@media screen and (max-width: 990px) {
-  body main #skill .container .row {
-    position: relative;
-    left: 0%;
-  }
-  body main #skill .container .row .col-lg-6 {
-    margin: 3%;
+@media screen and (max-width: 575.99px) {
+  .navbar .navbar-collapse {
+    background: black;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    left: -1px;
   }
 }
 
