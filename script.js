@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    AOS.init(); //Initating AOS
+    AOS.init({
+        disable: 'mobile'
+    });
 
 
     $("a").on('click', function (event) {
