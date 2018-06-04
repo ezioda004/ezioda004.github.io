@@ -2,4 +2,5 @@ style.scss
 style.css.map
 /.sass-cache
 main.html
-./script.js
+script.js
+style.css
