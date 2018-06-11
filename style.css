@@ -164,7 +164,7 @@ header .active {
   border-bottom: 3px solid #9b0c02;
 }
 
-header .intro {
+header #intro {
   position: relative;
   color: white;
   height: 70%;
@@ -173,12 +173,12 @@ header .intro {
   /* Center and scale the image nicely */
 }
 
-header .intro .down {
+header #intro .down {
   position: relative;
   top: 80%;
 }
 
-header .intro .type {
+header #intro .type {
   position: relative;
   top: 40%;
   display: flex;
@@ -186,14 +186,14 @@ header .intro .type {
   flex-flow: row wrap;
 }
 
-header .intro .type h1 {
+header #intro .type h1 {
   flex: 1 1 100%;
   text-align: center;
   color: aliceblue;
   font-size: 5em;
 }
 
-header .intro .type h2 {
+header #intro .type h2 {
   align-self: center;
   text-align: center;
 }
@@ -580,11 +580,11 @@ svg {
   p {
     font-size: 1em !important;
   }
-  header .intro .type {
+  header #intro .type {
     position: relative;
     top: 35%;
   }
-  header .intro .type h1 {
+  header #intro .type h1 {
     font-size: 3em !important;
   }
   body #skill .container .row .col-lg-6 .skill-current .skill-display .skill-bar {
