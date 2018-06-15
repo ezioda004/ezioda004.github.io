@@ -388,9 +388,9 @@ body #Projects .container-fluid .row .col-lg-6 figure img {
   width: 75%;
   height: 100%;
   background: #222;
-  -webkit-box-shadow: -6px 2px 90px 9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -6px 2px 90px 9px rgba(0, 0, 0, 0.75);
-  box-shadow: -6px 2px 90px 9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 24px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 24px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 24px 5px rgba(0, 0, 0, 0.75);
 }
 
 body #Projects .container-fluid .row .col-lg-6 figure .img-hover:hover {
