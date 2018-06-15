@@ -134,7 +134,7 @@ html #loader-wrapper .loader-section.section-right {
 header {
   color: white;
   font-family: "Ubuntu Mono", monospace;
-  background: url("img/prog2_blur.jpg");
+  background: url("../img/prog2_blur.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,10 +233,16 @@ body #About .container p {
 
 body #About .container .certificates .row .col-sm-6 img {
   opacity: 1;
+  -webkit-box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
+  box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
 }
 
 body #About .container .certificates .row .col-sm-6:nth-of-type(2) img {
   max-height: 434px;
+  -webkit-box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
+  box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
 }
 
 body #skill {
@@ -382,6 +388,9 @@ body #Projects .container-fluid .row .col-lg-6 figure img {
   width: 75%;
   height: 100%;
   background: #222;
+  -webkit-box-shadow: -6px 2px 90px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 2px 90px 9px rgba(0, 0, 0, 0.75);
+  box-shadow: -6px 2px 90px 9px rgba(0, 0, 0, 0.75);
 }
 
 body #Projects .container-fluid .row .col-lg-6 figure .img-hover:hover {
@@ -439,7 +448,7 @@ body .hire {
 }
 
 body .hire .container-fluid {
-  background: url("img/hire2.jpg");
+  background: url("../img/hire2.jpg");
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -499,6 +508,15 @@ body #contact .container form #after-submit p {
 
 body #contact .container form input {
   margin: 2% 0;
+  -webkit-box-shadow: -1px 2px 14px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 14px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 14px 1px rgba(0, 0, 0, 0.75);
+}
+
+body #contact .container form textarea {
+  -webkit-box-shadow: -1px 2px 14px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 14px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 14px 1px rgba(0, 0, 0, 0.75);
 }
 
 body #contact .container form button {
