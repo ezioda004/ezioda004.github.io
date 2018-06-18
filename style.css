@@ -639,6 +639,9 @@ svg {
 }
 
 @media screen and (max-width: 568px) {
+  body #skill {
+    padding-bottom: 13%;
+  }
   body #contact {
     padding-bottom: 15% !important;
   }
@@ -667,6 +670,9 @@ svg {
   }
   body #contact {
     padding-bottom: 23% !important;
+  }
+  body #skill {
+    padding-bottom: 15%;
   }
 }
 
