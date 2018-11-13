@@ -721,6 +721,9 @@ svg {
   #skill .container {
     padding-top: 10%;
   }
+  .wrapper-proj-bottom {
+    display: none;
+  }
 }
 
 @-webkit-keyframes spin {
