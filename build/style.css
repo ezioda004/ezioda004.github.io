@@ -702,8 +702,8 @@ svg {
     width: 67% !important;
   }
   .img-container:hover figcaption {
-    top: 0;
-    height: 90%;
+    top: 0 !important;
+    height: 90% !important;
   }
   h1,
   h2 {
