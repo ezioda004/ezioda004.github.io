@@ -698,6 +698,13 @@ svg {
   figure.img-fluid figcaption p {
     display: none;
   }
+  figcaption {
+    width: 67% !important;
+  }
+  .img-container:hover figcaption {
+    top: 0;
+    height: 90%;
+  }
   h1,
   h2 {
     font-size: 1.4em !important;
