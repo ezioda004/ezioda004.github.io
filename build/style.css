@@ -280,13 +280,23 @@ body #About .container p {
   font-size: 1.4em;
 }
 
-body #About .container .certificates .row .col-sm-6 img {
+body #About .container .certificates .row {
+  margin: 50px 0;
+}
+
+body #About .container .certificates .row .col-md-6 .challenge {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body #About .container .certificates .row .col-md-6 img {
   opacity: 1;
   -webkit-box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
   box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
 }
 
-body #About .container .certificates .row .col-sm-6:nth-of-type(2) img {
+body #About .container .certificates .row .col-md-6:nth-of-type(2) img {
   max-height: 434px;
   -webkit-box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
   box-shadow: -6px 17px 58px 9px rgba(0, 0, 0, 0.75);
@@ -388,6 +398,14 @@ body #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #C {
   background: #03599c;
 }
 
+body #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #Node {
+  background: #83cd29;
+}
+
+body #skill .row .col-lg-6 .skill-current .skill-display .skill-bar #Mongo {
+  background: #4faa41;
+}
+
 body #skill .row:nth-of-type(even) {
   position: relative;
   left: 10%;
@@ -438,50 +456,36 @@ body #Projects .container-fluid .row .col-lg-6 {
   text-align: center;
 }
 
+body #Projects .container-fluid .row .col-lg-6 .img-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
 body #Projects .container-fluid .row .col-lg-6 figure {
   overflow: hidden;
 }
 
 body #Projects .container-fluid .row .col-lg-6 figure img {
-  width: 75%;
+  width: 100%;
   height: 100%;
   background: #222;
   -webkit-box-shadow: -1px 2px 24px 5px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 24px 5px rgba(0, 0, 0, 0.75);
 }
 
-body #Projects .container-fluid .row .col-lg-6 figure .img-hover:hover {
-  opacity: 0.3;
-}
-
 body #Projects .container-fluid .row .col-lg-6 figure figcaption {
-  display: none;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  padding: 0.25rem;
+  opacity: 0.8;
   position: absolute;
-  top: 0;
+  bottom: 100%;
   left: 0;
   right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  width: 70%;
-  height: 90%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  background-color: grey;
   overflow: hidden;
-  opacity: 1;
-  z-index: 1000;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 75%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin: 0 auto;
 }
 
 body #Projects .container-fluid .row .col-lg-6 figure figcaption h3 {
@@ -512,6 +516,11 @@ body #Projects .container-fluid .row .col-lg-6 figure figcaption a {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+
+body #Projects .container-fluid .row .col-lg-6 figure .img-container:hover figcaption {
+  bottom: 0;
+  height: 100%;
 }
 
 body #Projects .wrapper-proj-bottom {

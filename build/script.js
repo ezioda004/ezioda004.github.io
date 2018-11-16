@@ -59,7 +59,7 @@ $(document).ready(function () {
         }
 
         var typed = new Typed("h1", options);
-    }, 500);
+    }, 5000);
 
 
     $("button").on("click", function (e) {
@@ -82,33 +82,33 @@ $(document).ready(function () {
         });
 
     });
-    $(".img-hover").on("mouseenter", function () {
-        $(this).css("opacity", "0.3");
-        $(this).next().width($(this).width());
-        $(this).next().height($(this).height());
-        $(this).next().fadeIn(400, "linear", function () {
-            $(this).next().css("display", "flex");
-        }).css("display", "flex");
-    });
-    $(".img-fluid").on("mouseleave", function () {
-        $($(this).children()[1]).fadeOut(400, "linear", function () {
-            $(this).prev().css("opacity", "1");
-            $(this).css("display", "none");
-        })
-    });
+    // $(".img-hover").on("mouseenter", function () {
+    //     $(this).css("opacity", "0.3");
+    //     $(this).next().width($(this).width());
+    //     $(this).next().height($(this).height());
+    //     $(this).next().fadeIn(400, "linear", function () {
+    //         $(this).next().css("display", "flex");
+    //     }).css("display", "flex");
+    // });
+    // $(".img-fluid").on("mouseleave", function () {
+    //     $($(this).children()[1]).fadeOut(400, "linear", function () {
+    //         $(this).prev().css("opacity", "1");
+    //         $(this).css("display", "none");
+    //     })
+    // });
 
-    $(window).resize(function () {
-        $("figcaption").width($("img").width());
-        $("figcaption").height($("img").height());
-        if ($(window).width() < 634) {
-            $("#GC").height("auto");
-        } else {
-            $("#GC").height($("#FC").height());
-        }
+    // $(window).resize(function () {
+    //     $("figcaption").width($("img").width());
+    //     $("figcaption").height($("img").height());
+    //     if ($(window).width() < 634) {
+    //         $(".certs").height("auto");
+    //     } else {
+    //         $(".certs").height($(".challenge").height());
+    //     }
 
-    })
-    $("figcaption").width($("img").width());
-    $("figcaption").height($("img").height());
+    // })
+    // $("figcaption").width($("img").width());
+    // $("figcaption").height($("img").height());
 });
 
 let emojis = ["😂🔫", "🍕", "💻", "✋📱"];
